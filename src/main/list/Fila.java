@@ -1,9 +1,30 @@
 package list;
 
-public interface Fila{
+import java.util.ArrayList;
 
-    public void	enqueue(int item);
-    public int	dequeue();
-    public boolean isEmpty();
-    public int	size();
+public interface Fila{
+    ArrayList Fila = new ArrayList();
+
+    public void	enqueue(int item){
+        Fila.add(item);
+    }
+
+    public int	dequeue(){
+        Fila.remove(0);
+    }
+
+    public boolean isEmpty() {
+        if(Fila.lenght() == null){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    public int	size() {
+        int tamanho = Fila.size();
+        return tamanho;
+    }
+
 }
